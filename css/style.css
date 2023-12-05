@@ -65,6 +65,7 @@ h1 {
   width: 100%;
   height: var(--card-height);
   background-color: black;
+  min-width: 300px;
 }
 
 .card-img,
@@ -82,8 +83,9 @@ img {
 }
 
 .card-text {
-  width: calc(100% - var(--card-height));
-  padding: 0.5rem;
+  min-width: calc(100% - var(--card-height));
+  margin: 0.5rem auto;
+  padding-left: 0.5rem;
   color: var(--card-text-color);
 }
 
