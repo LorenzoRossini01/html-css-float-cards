@@ -1,3 +1,11 @@
+:root {
+  --bg-color: rgb(1, 0, 26);
+  --main-title: #e53170;
+  --subtitle-text: black;
+  --card-text-color: white;
+  --email-text-color: #3f9bc6;
+}
+
 /* RESET */
 * {
   margin: 0;
@@ -9,7 +17,7 @@
 /* UTILS */
 
 .container {
-  max-width: 1080px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -17,5 +25,20 @@
 .debug {
   min-height: 80px;
   background-color: lightgray;
-  padding: 2rem;
+  /* padding: 2rem; */
+  border: 2px dashed red;
+}
+
+.header {
+  text-align: center;
+}
+
+h1 {
+  color: var(--main-title);
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+
+.header p {
+  color: var(--subtitle-text);
 }
