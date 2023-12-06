@@ -19,9 +19,25 @@
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col-1-3 {
+  width: calc(100% / 3);
+  padding: 15px;
+  float: left;
+  /* border: 2px dashed red; */
+}
+
+/* UTILS */
 
 .debug {
   min-height: 80px;
@@ -42,6 +58,7 @@
 
 .header {
   text-align: center;
+  padding-bottom: 3rem;
 }
 
 h1 {
@@ -55,26 +72,19 @@ h1 {
   color: var(--subtitle-text);
 }
 
-/* row */
-
-.row {
-  margin: -1rem;
-  margin-top: 2rem;
-}
-
-.col-1-3 {
-  width: calc(100% / 3);
-  float: left;
-  padding: 1rem;
-}
-
 /* card */
+.card-section {
+  margin: -10px;
+}
+
 .card {
-  width: 100%;
-  height: var(--card-height);
+  max-width: 350px;
+  min-height: var(--card-height);
   background-color: black;
-  min-width: 300px;
+  /* min-width: 350px; */
+  margin: 5px 10px;
   box-shadow: 0px 2px 13px 0px gray;
+  font-size: 0.7rem;
 }
 
 .card-img,
@@ -88,21 +98,17 @@ h1 {
 }
 
 img {
-  height: var(--card-height);
+  height: 100%;
+  display: block;
 }
 
 .card-text {
   min-width: calc(100% - var(--card-height));
-  margin: 0.5rem auto;
+  margin: 0px;
   padding-left: 0.5rem;
   color: var(--card-text-color);
-}
-
-.card-text .name {
-}
-
-.card-text .profession {
-  padding: 0.25rem 0;
+  line-height: calc(var(--card-height) / 3);
+  vertical-align: middle;
 }
 
 .card-text .email {
